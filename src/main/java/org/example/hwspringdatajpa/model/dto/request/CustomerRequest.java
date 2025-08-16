@@ -14,7 +14,7 @@ import org.example.hwspringdatajpa.model.entity.Customer;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class CustomerRequest {
+public class  CustomerRequest {
 
     @Schema(description = "Customer name", example = "John")
     @NotBlank

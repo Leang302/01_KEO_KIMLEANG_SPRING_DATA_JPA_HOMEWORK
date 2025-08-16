@@ -14,7 +14,7 @@ import lombok.*;
 public class OrderItem {
     @EmbeddedId
     private OrderItemId id;
-    @ManyToOne(optional = false)
+    @ManyToOne(optional = false,cascade = CascadeType.ALL)
     @MapsId("orderId")
     private Order order;
     @ManyToOne
